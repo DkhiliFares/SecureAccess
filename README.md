@@ -49,7 +49,7 @@
 | Hardware         | Raspberry Pi 3, RFID-RC522, PIR Sensor, Camera, Relay |
 | Software         | Python, Flask, OpenCV, face\_recognition, RPi.GPIO    |
 | Frontend Web App | HTML5, CSS3, JavaScript                               |
-| Database         | SQLite / JSON-based logs                              |
+| Database         | JSON-based logs                              |
 | Deployment       | Localhost / Raspberry Pi                              |
 
 ---
