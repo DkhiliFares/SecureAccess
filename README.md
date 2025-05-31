@@ -88,6 +88,8 @@
 | ❌ Unrecognized face   | Access denied       |
 | ❌ Wrong PIN           | Access denied       |
 | ❌ No motion           | System remains idle |
+
+---
 Test of an authorized person 
 ![image](https://github.com/user-attachments/assets/32e296a5-e761-4f60-969c-97f57a721ad3)
 
