@@ -57,7 +57,7 @@
 ### 🍓 Raspberry Pi Side
 #### RAPI Facial Recognition - Setup Instructions
 
-This document contains all the commands required to set up OpenCV with extra modules and run the RAPI Facial Recognition project.
+This part all the commands required to set up OpenCV with extra modules and run the RAPI Facial Recognition project.
 
 ---
 
@@ -126,21 +126,22 @@ pip install imutils
 pip install dlib
 ```
 
-*📸 Run the Application*
-**1-take photos for the dataset(headshot_picam.py take over 50 photos)
+**📸 Run the Application**
+
+*1-take photos for the dataset(headshot_picam.py take over 50 photos)*
 try to capture yourself with a different angles
 ```bash
 python3 headshotpicam.py
 ```
-train the model
+*2-train the model*
 ```bash
 python3 train_model.py
 ```
-Test it (2 test needed -> try to test it with your own face & other faces
+*3-Test it (2 test needed -> try to test it with your own face & other faces*
 ```bash
 python3 facial_req.py
 ```
-if the test doesn't work correctly you should improve your dataset (try to make all possible angles or add more photos to the dataset)
+*if the test doesn't work correctly you should improve your dataset (try to make all possible angles or add more photos to the dataset)*
 
 
 ### 🌐 Web App Side
