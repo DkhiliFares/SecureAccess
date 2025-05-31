@@ -39,7 +39,7 @@
 
 ## 🏗️ System Architecture
 
-```mermaid
+
 graph TD;
     PIR[👣 PIR Sensor] --> RPi[(Raspberry Pi 3)]
     RFID[🔖 RFID Reader] --> RPi
@@ -47,7 +47,7 @@ graph TD;
     KEYPAD[⌨️ Keypad] --> RPi
     RPi --> RELAY[🚪 Door Control (Relay)]
     RPi --> WEBAPP[🌐 Web Application]
-````
+
 
 ---
 
