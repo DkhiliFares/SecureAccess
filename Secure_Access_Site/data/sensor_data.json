@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "timestamp": "2025-05-25T10:00:00",
+    "temperature": 24.5,
+    "humidity": 45.2,
+    "pir_status": "Activé",
+    "door_status": "Fermée"
+  },
+  {
+    "id": 2,
+    "timestamp": "2025-05-25T10:30:00",
+    "temperature": 24.7,
+    "humidity": 46.0,
+    "pir_status": "Activé",
+    "door_status": "Fermée"
+  },
+  {
+    "id": 3,
+    "timestamp": "2025-05-25T11:00:00",
+    "temperature": 25.1,
+    "humidity": 46.5,
+    "pir_status": "Activé",
+    "door_status": "Fermée"
+  },
+  {
+    "id": 4,
+    "timestamp": "2025-05-25T11:30:00",
+    "temperature": 25.3,
+    "humidity": 47.0,
+    "pir_status": "Activé",
+    "door_status": "Ouverte"
+  },
+  {
+    "id": 5,
+    "timestamp": "2025-05-25T12:00:00",
+    "temperature": 25.5,
+    "humidity": 47.2,
+    "pir_status": "Activé",
+    "door_status": "Fermée"
+  },
+  {
+    "id": 6,
+    "timestamp": "2025-05-25T12:30:00",
+    "temperature": 25.8,
+    "humidity": 48.0,
+    "pir_status": "Activé",
+    "door_status": "Fermée"
+  },
+  {
+    "id": 7,
+    "timestamp": "2025-05-25T13:00:00",
+    "temperature": 26.0,
+    "humidity": 48.5,
+    "pir_status": "Activé",
+    "door_status": "Fermée"
+  },
+  {
+    "id": 8,
+    "timestamp": "2025-05-25T13:30:00",
+    "temperature": 26.2,
+    "humidity": 49.0,
+    "pir_status": "Activé",
+    "door_status": "Ouverte"
+  },
+  {
+    "id": 9,
+    "timestamp": "2025-05-25T14:00:00",
+    "temperature": 26.5,
+    "humidity": 49.5,
+    "pir_status": "Activé",
+    "door_status": "Fermée"
+  },
+  {
+    "id": 10,
+    "timestamp": "2025-05-25T14:30:00",
+    "temperature": 26.8,
+    "humidity": 50.0,
+    "pir_status": "Activé",
+    "door_status": "Fermée"
+  },
+  {
+    "id": 11,
+    "timestamp": "2025-05-25T15:00:00",
+    "temperature": 27.0,
+    "humidity": 50.5,
+    "pir_status": "Activé",
+    "door_status": "Ouverte"
+  },
+  {
+    "id": 12,
+    "timestamp": "2025-05-25T15:30:00",
+    "temperature": 27.2,
+    "humidity": 51.0,
+    "pir_status": "Activé",
+    "door_status": "Fermée"
+  }
+]

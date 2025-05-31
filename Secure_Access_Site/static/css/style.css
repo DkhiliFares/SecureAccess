@@ -1,0 +1,106 @@
+/* Styles généraux pour l'application SecureAccess */
+body {
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-header {
+    font-weight: bold;
+}
+
+/* Styles pour les indicateurs de statut */
+.status-indicator {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.status-success {
+    background-color: #28a745;
+}
+
+.status-danger {
+    background-color: #dc3545;
+}
+
+.status-warning {
+    background-color: #ffc107;
+}
+
+/* Styles pour les valeurs de capteurs */
+.sensor-value {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.sensor-label {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* Styles pour les tableaux */
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* Style pour les boutons d'image */
+.img-btn {
+    cursor: pointer;
+    color: #007bff;
+}
+
+.img-btn:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Styles pour les graphiques */
+.chart-container {
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+
+/* Styles pour les indicateurs de statut des capteurs */
+.sensor-status-card {
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.sensor-status-active {
+    background-color: rgba(40, 167, 69, 0.2);
+    border: 1px solid #28a745;
+}
+
+.sensor-status-inactive {
+    background-color: rgba(220, 53, 69, 0.2);
+    border: 1px solid #dc3545;
+}
+
+.sensor-status-alert {
+    background-color: rgba(255, 193, 7, 0.2);
+    border: 1px solid #ffc107;
+}
+
+/* Styles responsive */
+@media (max-width: 768px) {
+    .sensor-value {
+        font-size: 1rem;
+    }
+    
+    .card-title {
+        font-size: 1.1rem;
+    }
+}

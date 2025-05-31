@@ -1,0 +1,272 @@
+[
+  {
+    "timestamp": "2025-05-30T06:18:03",
+    "status": "Accepted",
+    "rfid_id": "R4LYLJVR",
+    "user_name": "fares",
+    "image_path": "/static/img/auth_fares_20250530_061803_9ebc711e.jpg",
+    "id": 12
+  },
+  {
+    "timestamp": "2025-05-30T06:19:29",
+    "status": "Refused",
+    "rfid_id": "THNHER86",
+    "user_name": "Inconnu",
+    "image_path": "/static/img/failed_auth_20250530_061929_6738a8fb.jpg",
+    "reason": "Visage non reconnu",
+    "id": 13
+  },
+  {
+    "timestamp": "2025-05-30T06:21:12",
+    "status": "Refused",
+    "rfid_id": "6SM5DR66",
+    "user_name": "Inconnu",
+    "image_path": "/static/img/failed_auth_20250530_062112_41affba0.jpg",
+    "reason": "Visage non reconnu",
+    "id": 14
+  },
+  {
+    "timestamp": "2025-05-30T06:22:02",
+    "status": "Accepted",
+    "rfid_id": "GZWRZAZP",
+    "user_name": "fares",
+    "image_path": "/static/img/auth_fares_20250530_062202_2b098d2c.jpg",
+    "id": 15
+  },
+  {
+    "timestamp": "2025-05-30T06:28:41",
+    "status": "Accepted",
+    "rfid_id": "29O9O42Q",
+    "user_name": "fares",
+    "image_path": "/static/img/auth_fares_20250530_062841_90f7802e.jpg",
+    "id": 18
+  },
+  {
+    "timestamp": "2025-05-30T06:28:42",
+    "status": "Accepted",
+    "rfid_id": "4FRBXNTD",
+    "user_name": "fares",
+    "image_path": "/static/img/auth_fares_20250530_062843_c07f246e.jpg",
+    "id": 19
+  },
+  {
+    "timestamp": "2025-05-30T06:28:46",
+    "status": "Accepted",
+    "rfid_id": "BBYGM8I1",
+    "user_name": "fares",
+    "image_path": "/static/img/auth_fares_20250530_062846_500f88e4.jpg",
+    "id": 20
+  },
+  {
+    "timestamp": "2025-05-30T06:28:48",
+    "status": "Accepted",
+    "rfid_id": "H5F5FQ6O",
+    "user_name": "fares",
+    "image_path": "/static/img/auth_fares_20250530_062848_944883b1.jpg",
+    "id": 21
+  },
+  {
+    "timestamp": "2025-05-30T06:29:01",
+    "status": "Refused",
+    "rfid_id": "465UU6OM",
+    "user_name": "Inconnu",
+    "image_path": "/static/img/failed_auth_20250530_062901_735267ed.jpg",
+    "reason": "Visage non reconnu",
+    "id": 22
+  },
+  {
+    "timestamp": "2025-05-30T06:29:23",
+    "status": "Refused",
+    "rfid_id": "K6988OPF",
+    "user_name": "Inconnu",
+    "image_path": "/static/img/failed_auth_20250530_062923_2ad1b588.jpg",
+    "reason": "Visage non reconnu",
+    "id": 23
+  },
+  {
+    "timestamp": "2025-05-30T06:29:25",
+    "status": "Refused",
+    "rfid_id": "9RFX10NW",
+    "user_name": "Inconnu",
+    "image_path": "/static/img/failed_auth_20250530_062925_90555fb9.jpg",
+    "reason": "Visage non reconnu",
+    "id": 24
+  },
+  {
+    "timestamp": "2025-05-30T06:29:26",
+    "status": "Refused",
+    "rfid_id": "GR4PAD67",
+    "user_name": "Inconnu",
+    "image_path": "/static/img/failed_auth_20250530_062926_b53e85bc.jpg",
+    "reason": "Visage non reconnu",
+    "id": 25
+  },
+  {
+    "timestamp": "2025-05-30T06:29:28",
+    "status": "Refused",
+    "rfid_id": "ZVMWGE61",
+    "user_name": "Inconnu",
+    "image_path": "/static/img/failed_auth_20250530_062928_4f1125f2.jpg",
+    "reason": "Visage non reconnu",
+    "id": 26
+  },
+  {
+    "timestamp": "2025-05-30T06:32:20",
+    "status": "Refused",
+    "rfid_id": "HLHCOLW8",
+    "user_name": "Inconnu",
+    "image_path": "/static/img/failed_auth_20250530_063220_868da06b.jpg",
+    "reason": "Visage non reconnu",
+    "id": 27
+  },
+  {
+    "timestamp": "2025-05-30T06:32:21",
+    "status": "Refused",
+    "rfid_id": "P53J3PKZ",
+    "user_name": "Inconnu",
+    "image_path": "/static/img/failed_auth_20250530_063222_43ac8088.jpg",
+    "reason": "Visage non reconnu",
+    "id": 28
+  },
+  {
+    "timestamp": "2025-05-30T06:32:23",
+    "status": "Refused",
+    "rfid_id": "ISR7P1PB",
+    "user_name": "Inconnu",
+    "image_path": "/static/img/failed_auth_20250530_063223_a8fca4bf.jpg",
+    "reason": "Visage non reconnu",
+    "id": 29
+  },
+  {
+    "timestamp": "2025-05-30T06:32:25",
+    "status": "Refused",
+    "rfid_id": "V5JL4ZFC",
+    "user_name": "Inconnu",
+    "image_path": "/static/img/failed_auth_20250530_063225_0d1b9078.jpg",
+    "reason": "Visage non reconnu",
+    "id": 30
+  },
+  {
+    "timestamp": "2025-05-30T06:32:26",
+    "status": "Refused",
+    "rfid_id": "IZNBDWA2",
+    "user_name": "Inconnu",
+    "image_path": "/static/img/failed_auth_20250530_063226_d7b540cc.jpg",
+    "reason": "Visage non reconnu",
+    "id": 31
+  },
+  {
+    "timestamp": "2025-05-30T06:32:54",
+    "status": "Refused",
+    "rfid_id": "NDU6BBWB",
+    "user_name": "Inconnu",
+    "image_path": "/static/img/failed_auth_20250530_063255_6e04ff0c.jpg",
+    "reason": "Visage non reconnu",
+    "id": 32
+  },
+  {
+    "timestamp": "2025-05-30T06:32:56",
+    "status": "Refused",
+    "rfid_id": "0APOLYX6",
+    "user_name": "Inconnu",
+    "image_path": "/static/img/failed_auth_20250530_063256_005ed46a.jpg",
+    "reason": "Visage non reconnu",
+    "id": 33
+  },
+  {
+    "timestamp": "2025-05-30T06:32:58",
+    "status": "Refused",
+    "rfid_id": "VM0BWDBF",
+    "user_name": "Inconnu",
+    "image_path": "/static/img/failed_auth_20250530_063258_7f5f440f.jpg",
+    "reason": "Visage non reconnu",
+    "id": 34
+  },
+  {
+    "timestamp": "2025-05-30T06:32:59",
+    "status": "Refused",
+    "rfid_id": "DHBUZHYR",
+    "user_name": "Inconnu",
+    "image_path": "/static/img/failed_auth_20250530_063259_ae56e6a8.jpg",
+    "reason": "Visage non reconnu",
+    "id": 35
+  },
+  {
+    "timestamp": "2025-05-30T06:33:01",
+    "status": "Refused",
+    "rfid_id": "A8LKF70Z",
+    "user_name": "Inconnu",
+    "image_path": "/static/img/failed_auth_20250530_063301_ea4d19d7.jpg",
+    "reason": "Visage non reconnu",
+    "id": 36
+  },
+  {
+    "timestamp": "2025-05-30T06:53:31",
+    "status": "Accepted",
+    "rfid_id": "4PWQ29HE",
+    "user_name": "fares",
+    "image_path": "/static/img/auth_fares_20250530_065331_51754e2a.jpg",
+    "id": 37
+  },
+  {
+    "timestamp": "2025-05-30T09:12:17",
+    "status": "Refused",
+    "rfid_id": "JJY6F5D8",
+    "user_name": "Inconnu",
+    "image_path": "/static/img/failed_auth_20250530_091218_77399696.jpg",
+    "reason": "Visage non reconnu",
+    "id": 38
+  },
+  {
+    "timestamp": "2025-05-30T09:12:43",
+    "status": "Refused",
+    "rfid_id": "HHHUZ921",
+    "user_name": "Inconnu",
+    "image_path": "/static/img/failed_auth_20250530_091244_6ac88494.jpg",
+    "reason": "Visage non reconnu",
+    "id": 39
+  },
+  {
+    "timestamp": "2025-05-30T09:12:58",
+    "status": "Refused",
+    "rfid_id": "G9IY4S2M",
+    "user_name": "Inconnu",
+    "image_path": "/static/img/failed_auth_20250530_091258_ce68deac.jpg",
+    "reason": "Visage non reconnu",
+    "id": 40
+  },
+  {
+    "timestamp": "2025-05-30T09:13:00",
+    "status": "Refused",
+    "rfid_id": "9VFQ28HA",
+    "user_name": "Inconnu",
+    "image_path": "/static/img/failed_auth_20250530_091300_5d635163.jpg",
+    "reason": "Visage non reconnu",
+    "id": 41
+  },
+  {
+    "timestamp": "2025-05-30T09:13:02",
+    "status": "Refused",
+    "rfid_id": "DCGMYCLC",
+    "user_name": "Inconnu",
+    "image_path": "/static/img/failed_auth_20250530_091303_d044b553.jpg",
+    "reason": "Visage non reconnu",
+    "id": 42
+  },
+  {
+    "timestamp": "2025-05-30T09:13:44",
+    "status": "Accepted",
+    "rfid_id": "NZRDR88H",
+    "user_name": "fares",
+    "image_path": "/static/img/auth_fares_20250530_091345_d17c7090.jpg",
+    "id": 43
+  },
+  {
+    "timestamp": "2025-05-30T09:13:46",
+    "status": "Accepted",
+    "rfid_id": "0Z62ILC9",
+    "user_name": "fares",
+    "image_path": "/static/img/auth_fares_20250530_091347_7d6b04d7.jpg",
+    "id": 44
+  }
+]
