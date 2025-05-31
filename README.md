@@ -146,11 +146,6 @@ Connexion within the Rpi:
 
 ---
 
-## ⚖️ License
-
-This project is licensed under the MIT License. See `LICENSE` for more information.
-
----
 
 > *“SecureAccess — Because smart access means smarter security.”*
 
