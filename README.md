@@ -53,7 +53,97 @@
 | Deployment       | Localhost / Raspberry Pi                              |
 
 ---
+## 🖥️ Implementation 
+### 🍓 Raspberry Pi Side
+#### RAPI Facial Recognition - Setup Instructions
 
+This document contains all the commands required to set up OpenCV with extra modules and run the RAPI Facial Recognition project.
+
+---
+
+ *🧰 Install Required Packages*
+
+```bash
+sudo apt install cmake build-essential pkg-config git
+sudo apt install libjpeg-dev libtiff-dev libjasper-dev libpng-dev libwebp-dev libopenexr-dev
+sudo apt install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libxvidcore-dev libx264-dev libdc1394-22-dev libgstreamer-plugins-base1.0-dev libgstreamer1.0-dev
+sudo apt install libgtk-3-dev libqtgui4 libqtwebkit4 libqt4-test python3-pyqt5
+sudo apt install libatlas-base-dev liblapacke-dev gfortran
+sudo apt install libhdf5-dev libhdf5-103
+sudo apt install python3-dev python3-pip python3-numpy
+```
+
+*📥 Clone OpenCV and Extra Modules*
+
+```bash
+git clone https://github.com/opencv/opencv.git
+git clone https://github.com/opencv/opencv_contrib
+```
+
+*🛠️ Build and Install OpenCV*
+
+```bash
+mkdir ~/opencv/build
+cd ~/opencv/build
+
+cmake -D CMAKE_BUILD_TYPE=RELEASE \
+-D CMAKE_INSTALL_PREFIX=/usr/local \
+-D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules \
+-D ENABLE_NEON=ON \
+-D ENABLE_VFPV3=ON \
+-D BUILD_TESTS=OFF \
+-D INSTALL_PYTHON_EXAMPLES=OFF \
+-D OPENCV_ENABLE_NONFREE=ON \
+-D CMAKE_SHARED_LINKER_FLAGS=-latomic \
+-D BUILD_EXAMPLES=OFF ..
+
+make -j$(nproc)
+sudo make install
+sudo ldconfig
+```
+
+*🐍 Set Up Python Virtual Environment*
+
+```bash
+python3 -m venv venv --system-site-packages
+source venv/bin/activate
+```
+
+*📦 Clone the RAPI Facial Recognition Repository*
+
+```bash
+git clone https://github.com/annie-hola/rapi-facial-recognition
+cd rapi-facial-recognition
+```
+
+*📦 Install Python Dependencies*
+
+```bash
+pip install face-recognition
+pip install opencv-python
+pip install numpy
+pip install imutils
+pip install dlib
+```
+
+*📸 Run the Application*
+**1-take photos for the dataset(headshot_picam.py take over 50 photos)
+try to capture yourself with a different angles
+```bash
+python3 headshotpicam.py
+```
+train the model
+```bash
+python3 train_model.py
+```
+Test it (2 test needed -> try to test it with your own face & other faces
+```bash
+python3 facial_req.py
+```
+if the test doesn't work correctly you should improve your dataset (try to make all possible angles or add more photos to the dataset)
+
+
+### 🌐 Web App Side
 * **Dashboard (WebApp)**
 ![image](https://github.com/user-attachments/assets/c7351453-b5cd-41e2-9a0a-e5932e590c04)
 
