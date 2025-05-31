@@ -55,7 +55,8 @@
 ---
 
 * **Dashboard (WebApp)**
-![Capture d'écran 2025-05-31 105959](https://github.com/user-attachments/assets/1f3d3ed0-ef38-41b8-948d-680e31fecc6b)
+![image](https://github.com/user-attachments/assets/c7351453-b5cd-41e2-9a0a-e5932e590c04)
+
 
 
 * **Authentication Logs**
