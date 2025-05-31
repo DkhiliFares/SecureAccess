@@ -60,19 +60,21 @@
 > *You can replace these with real image files in your repo*
 
 * **Dashboard (WebApp)**
-  ![Dashboard](![image](https://github.com/user-attachments/assets/f724d3be-4b12-4af5-9e94-395cb64001f5)
-)
-)
+![Capture d'écran 2025-05-31 105959](https://github.com/user-attachments/assets/1f3d3ed0-ef38-41b8-948d-680e31fecc6b)
+
 
 * **Authentication Logs**
-  ![Logs](![image](https://github.com/user-attachments/assets/61f8659a-ddb4-4373-80dd-67f719cdfdd2)
-)
+![image](https://github.com/user-attachments/assets/f9df95ef-8a99-4719-8ce6-a1147e6e4f8e)
+
 
 * **Sensor Monitoring**
-  ![Sensors](./screenshots/sensors.png)
+![image](https://github.com/user-attachments/assets/94517377-7dd0-4de9-a93a-1beb6f333ef0)
+
+![image](https://github.com/user-attachments/assets/233a6daf-0678-491a-a567-e7c0174e812f)
 
 * **Door History**
-  ![Door](./screenshots/door.png)
+![image](https://github.com/user-attachments/assets/e9d02314-b85b-48ed-9456-127626727160)
+
 
 ---
 
@@ -85,9 +87,22 @@
 | ❌ Unrecognized face   | Access denied       |
 | ❌ Wrong PIN           | Access denied       |
 | ❌ No motion           | System remains idle |
+Test of an authorized person 
+![image](https://github.com/user-attachments/assets/32e296a5-e761-4f60-969c-97f57a721ad3)
+
+![image](https://github.com/user-attachments/assets/1166841c-a969-4479-8e58-f93ade928cb3)
+
+Test of non authorized person
+![image](https://github.com/user-attachments/assets/5b9300c5-fd4a-4466-876b-0f3da7353eeb)
+
+Connexion within the Rpi:
+![image](https://github.com/user-attachments/assets/f87c3d16-792e-45da-8cf9-0d898c79878f)
+
+
 
 > ⏱️ Avg. response time: **2-3 seconds**
 > 🎯 Face recognition accuracy: **95%+** (under good lighting)
+
 
 ---
 
@@ -120,7 +135,7 @@
 ## 🧑‍💻 Contributors
 
 * 👨‍🎓 **Dkhili Fares** — [@DkhiliFares](https://github.com/DkhiliFares)
-* 👨‍🏫 **Supervisor** — Hizem Moez
+* 👨‍🎓 **Zouari Adam** — [@ZouariAdam](https://github.com/Adam-Zouari)
 
 ---
 
