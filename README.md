@@ -60,10 +60,13 @@
 > *You can replace these with real image files in your repo*
 
 * **Dashboard (WebApp)**
-  ![Dashboard](./screenshots/dashboard.png)
+  ![Dashboard](![image](https://github.com/user-attachments/assets/f724d3be-4b12-4af5-9e94-395cb64001f5)
+)
+)
 
 * **Authentication Logs**
-  ![Logs](./screenshots/logs.png)
+  ![Logs](![image](https://github.com/user-attachments/assets/61f8659a-ddb4-4373-80dd-67f719cdfdd2)
+)
 
 * **Sensor Monitoring**
   ![Sensors](./screenshots/sensors.png)
