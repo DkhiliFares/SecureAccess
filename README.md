@@ -38,15 +38,7 @@
 ---
 
 ## 🏗️ System Architecture
-
-
-graph TD;
-    PIR[👣 PIR Sensor] --> RPi[(Raspberry Pi 3)]
-    RFID[🔖 RFID Reader] --> RPi
-    CAM[📸 Camera] --> RPi
-    KEYPAD[⌨️ Keypad] --> RPi
-    RPi --> RELAY[🚪 Door Control (Relay)]
-    RPi --> WEBAPP[🌐 Web Application]
+![graphe fares ](https://github.com/user-attachments/assets/bdc66664-6197-4763-a59f-70c612f0825f)
 
 
 ---
@@ -164,5 +156,3 @@ This project is licensed under the MIT License. See `LICENSE` for more informati
 
 ---
 
-Si tu veux, je peux te créer ce `README.md` directement en fichier téléchargeable ou t’aider à ajouter les images nécessaires. Tu veux que je fasse ça ?
-```
