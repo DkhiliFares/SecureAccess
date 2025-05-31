@@ -125,6 +125,10 @@ pip install numpy
 pip install imutils
 pip install dlib
 ```
+---
+![image](https://github.com/user-attachments/assets/7d1f9959-74d4-4979-b36b-69bd13f6da55)
+
+---
 
 **📸 Run the Application**
 
@@ -133,6 +137,13 @@ try to capture yourself with a different angles
 ```bash
 python3 headshotpicam.py
 ```
+*dataset*
+
+![image](https://github.com/user-attachments/assets/4a7e8f14-e365-42d6-b5a7-ff21087f5376)
+
+
+*note !* by changing the known name in headshot_picam.py you can add more than one authorized person in this case i used to train the model only with my own face
+
 *2-train the model*
 ```bash
 python3 train_model.py
@@ -147,30 +158,36 @@ python3 facial_req.py
 ```bash
 python3 back.py
 ```
+
 *this code uses requests to send data (images+Auth attempts)*
 
 🐍 back.py code [https://github.com/DkhiliFares/SecureAccess/blob/main/back.py]
+
+*First test (unknown/known Faces)*
+![image](https://github.com/user-attachments/assets/d0175dde-921d-4656-b3bd-0c851a28922f)
+
 
 
 
 
 ### 🌐 Web App Side
-* **Dashboard (WebApp)**
+This is the link to download the App 
+**Dashboard (WebApp)**
 ![image](https://github.com/user-attachments/assets/c7351453-b5cd-41e2-9a0a-e5932e590c04)
 
 
 
-* **Authentication Logs**
+**Authentication Logs**
 ![image](https://github.com/user-attachments/assets/f9df95ef-8a99-4719-8ce6-a1147e6e4f8e)
 
 
-* **Sensor Monitoring**
+**Sensor Monitoring**
 ![image](https://github.com/user-attachments/assets/617fb9d7-f036-4100-9db7-d9da469cfed2)
 
 
   ![image](https://github.com/user-attachments/assets/233a6daf-0678-491a-a567-e7c0174e812f)
 
-* **Door History**
+**Door History**
 ![image](https://github.com/user-attachments/assets/3deba630-3de9-4d07-99c9-848eeb9de010)
 
 ![image](https://github.com/user-attachments/assets/9ce779c1-23b7-456c-b44e-fa03bf4d1ff3)
