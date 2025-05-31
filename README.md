@@ -147,8 +147,9 @@ python3 facial_req.py
 ```bash
 python3 back.py
 ```
-this code uses requests to send data (images+Auth attempts)
-🐍 back.py code [back.py]
+*this code uses requests to send data (images+Auth attempts)*
+
+🐍 back.py code [https://github.com/DkhiliFares/SecureAccess/blob/main/back.py]
 
 
 
