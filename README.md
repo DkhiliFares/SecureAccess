@@ -3,10 +3,7 @@
 
 > 🧠 Multimodal authentication | 📷 Face Recognition | 📱 Web Monitoring | 🔒 Secure Room Access
 
-![GitHub repo size](https://img.shields.io/github/repo-size/DkhiliFares/SecureAccess)
-![GitHub stars](https://img.shields.io/github/stars/DkhiliFares/SecureAccess?style=social)
-![Made with](https://img.shields.io/badge/Made%20with-Python%20%26%20Flask-blue)
-![License](https://img.shields.io/github/license/DkhiliFares/SecureAccess)
+
 
 ---
 
