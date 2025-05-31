@@ -156,7 +156,4 @@ This project is licensed under the MIT License. See `LICENSE` for more informati
 
 > *“SecureAccess — Because smart access means smarter security.”*
 
-```
-
----
 
