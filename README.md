@@ -40,6 +40,8 @@
 ## 🏗️ System Architecture
 ![graphe fares ](https://github.com/user-attachments/assets/bdc66664-6197-4763-a59f-70c612f0825f)
 
+![_Logigramme](https://github.com/user-attachments/assets/1afe2ef1-5e23-4347-a047-de5fbc7b698e)
+
 
 ---
 
@@ -54,10 +56,6 @@
 | Deployment       | Localhost / Raspberry Pi                              |
 
 ---
-
-## 📸 Screenshots
-
-> *You can replace these with real image files in your repo*
 
 * **Dashboard (WebApp)**
 ![Capture d'écran 2025-05-31 105959](https://github.com/user-attachments/assets/1f3d3ed0-ef38-41b8-948d-680e31fecc6b)
