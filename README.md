@@ -1,8 +1,4 @@
-Voici un fichier `README.md` professionnel, esthétique et engageant pour mettre en valeur ton projet **SecureAccess** sur GitHub. Il inclut une présentation claire, des badges, des captures d'écran suggérées, et des sections bien organisées.
 
----
-
-````markdown
 # 🔐 SecureAccess — Smart Access Control & Monitoring System
 
 > 🧠 Multimodal authentication | 📷 Face Recognition | 📱 Web Monitoring | 🔒 Secure Room Access
