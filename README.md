@@ -114,20 +114,6 @@
 
 ---
 
-## 📂 Project Structure
-
-```
-SecureAccess/
-├── embedded/           # Code for sensors, camera, and GPIO
-├── webApp/             # Flask-based web dashboard
-├── dataset/            # Stored facial images
-├── logs/               # Access history
-├── screenshots/        # UI captures (optional)
-└── README.md           # You are here
-```
-
----
-
 ## 🧑‍💻 Contributors
 
 * 👨‍🎓 **Dkhili Fares** — [@DkhiliFares](https://github.com/DkhiliFares)
