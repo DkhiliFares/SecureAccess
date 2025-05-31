@@ -64,12 +64,17 @@
 
 
 * **Sensor Monitoring**
-![image](https://github.com/user-attachments/assets/94517377-7dd0-4de9-a93a-1beb6f333ef0)
+![image](https://github.com/user-attachments/assets/617fb9d7-f036-4100-9db7-d9da469cfed2)
 
-![image](https://github.com/user-attachments/assets/233a6daf-0678-491a-a567-e7c0174e812f)
+
+  ![image](https://github.com/user-attachments/assets/233a6daf-0678-491a-a567-e7c0174e812f)
 
 * **Door History**
-![image](https://github.com/user-attachments/assets/e9d02314-b85b-48ed-9456-127626727160)
+![image](https://github.com/user-attachments/assets/3deba630-3de9-4d07-99c9-848eeb9de010)
+
+![image](https://github.com/user-attachments/assets/9ce779c1-23b7-456c-b44e-fa03bf4d1ff3)
+
+
 
 
 ---
