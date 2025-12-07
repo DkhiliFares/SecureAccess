@@ -28,6 +28,8 @@
 - 🧾 **RFID Authentication** — Badge scanning with UID recognition
 - 🎭 **Facial Recognition** — Powered by OpenCV and `face_recognition` lib
 - 🔐 **PIN Code** — Numeric entry via keypad
+- 🔐 **End-to-End Encryption** — AES-128-CCM (Counter with CBC-MAC) encryption for image data
+- 🛡️ **Secure Storage** — Images stored as encrypted binaries (.bin), not viewable without key
 - ⚙️ **Web Dashboard** — Monitor access attempts, users, door status & sensors
 - 🌐 **Flask API** — Lightweight local server to manage system logic
 - 💡 **Energy Efficient** — Only activates on detected presence
@@ -39,6 +41,14 @@
 
 ![_Logigramme](https://github.com/user-attachments/assets/1afe2ef1-5e23-4347-a047-de5fbc7b698e)
 
+
+### 🔒 Security Implementation
+The system employs **AES-128-CCM (Counter with CBC-MAC)** to ensure confidentiality and integrity of the visual data.
+
+1.  **Encryption on Edge**: The Raspberry Pi encrypts captured face images using a shared secret key before transmission over the network.
+2.  **Authenticated Encryption**: AES-CCM provides both encryption (privacy) and integrity (tamper detection).
+3.  **Secure Storage**: The server stores the raw encrypted bytes (`.bin` files). Images are **never** stored as plain JPEGs on the disk.
+4.  **On-Demand Decryption**: Viewing an image in the dashboard requires the administrator to input the decryption key. The decryption happens in memory only for the duration of the request.
 
 ---
 
@@ -232,7 +242,6 @@ Connexion within the Rpi:
 ### ⚠️ Limitations
 
 * Facial recognition depends on lighting
-* No encryption (yet) — consider HTTPS/TLS
 * PIN keypad is sensitive to humidity
 
 ### 📈 Future Enhancements

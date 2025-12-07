@@ -7,6 +7,7 @@ import requests
 import random
 import string
 from datetime import datetime
+from crypto_utils import encrypt_image_data
 
 # Configuration
 BACKEND_URL = "http://192.168.251.1:5000"  # Your Windows machine IP (change if different)
@@ -29,14 +30,23 @@ def send_auth_data(name, status, frame, reason=None):
     """Send authentication data with image to the backend"""
     try:
         # Prepare image for upload
-        image_data = prepare_image_for_upload(frame)
+        raw_image_data = prepare_image_for_upload(frame)
+        
+        # Encrypt the image data
+        encrypted_image_data = encrypt_image_data(raw_image_data)
+        
+        if encrypted_image_data is None:
+            print("[ERROR] Failed to encrypt image. Aborting send.")
+            return
 
         # Prepare form data
         timestamp = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
 
         # Create multipart form data
+        # Note: We send the encrypted bytes. The filename extension is still .jpg to satisfy some server checks,
+        # but the content is actually encrypted binary data.
         files = {
-            'image': ('face_image.jpg', image_data, 'image/jpeg')
+            'image': ('face_image.bin', encrypted_image_data, 'application/octet-stream')
         }
 
         data = {

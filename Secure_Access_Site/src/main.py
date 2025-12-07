@@ -2,12 +2,16 @@ import sys
 import os
 import json
 import uuid
-from flask import Flask, render_template, jsonify, request
+import importlib
+from flask import Flask, render_template, jsonify, request, redirect, url_for, flash
 from flask_cors import CORS
 from datetime import datetime
 from werkzeug.utils import secure_filename
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))  # DON'T CHANGE THIS !!!
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(__file__)))) # Add parent of parent to path for crypto_utils
+import crypto_utils
+from crypto_utils import decrypt_image_data
 
 app = Flask(__name__,
             static_folder="../static",
@@ -22,6 +26,7 @@ CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 # Ensure upload directory exists
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
+app.secret_key = 'supersecretkey' # Needed for flash messages
 
 # Fonction pour charger les données JSON
 def load_json_data(file_path):
@@ -43,7 +48,7 @@ def save_json_data(file_path, data):
         return False
 
 # Fonction pour sauvegarder les images uploadées
-def save_uploaded_image(image_file, status, user_name):
+def save_uploaded_image(image_input, status, user_name):
     try:
         # Generate unique filename
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -51,15 +56,21 @@ def save_uploaded_image(image_file, status, user_name):
 
         # Create filename based on status
         if status in ["Refusé", "Refuse", "Refused"]:
-            filename = f"failed_auth_{timestamp}_{unique_id}.jpg"
+            filename = f"failed_auth_{timestamp}_{unique_id}.bin"
         else:
             # Clean user name for filename
             clean_name = secure_filename(user_name.replace(" ", "_").lower())
-            filename = f"auth_{clean_name}_{timestamp}_{unique_id}.jpg"
+            filename = f"auth_{clean_name}_{timestamp}_{unique_id}.bin"
 
         # Save file
         filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
-        image_file.save(filepath)
+        
+        if hasattr(image_input, 'save'):
+             image_input.save(filepath)
+        else:
+             # Assume bytes
+             with open(filepath, 'wb') as f:
+                 f.write(image_input)
 
         # Return relative path for database
         return f"/static/img/{filename}"
@@ -97,7 +108,9 @@ def add_auth_log():
             if 'image' in request.files:
                 image_file = request.files['image']
                 if image_file.filename != '':
+                    # Save the raw (encrypted) data directly
                     image_path = save_uploaded_image(image_file, status, user_name)
+                    
                     if not image_path:
                         return jsonify({"error": "Failed to save image"}), 500
 
@@ -175,6 +188,53 @@ def get_door_history():
     door_history = [{"timestamp": item["timestamp"], "door_status": item["door_status"]} for item in sensor_data]
     return jsonify(door_history)
 
+@app.route('/api/view_image/<path:filename>')
+def view_image(filename):
+    """
+    Serve a decrypted image.
+    Expects 'key' query parameter.
+    """
+    key = request.args.get('key')
+    if not key:
+        return "Decryption key required", 400
+        
+    # Ensure filename is safe (basename only)
+    filename = secure_filename(os.path.basename(filename))
+    filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+    
+    if not os.path.exists(filepath):
+        return "File not found", 404
+        
+    try:
+        # Read encrypted data
+        with open(filepath, 'rb') as f:
+            encrypted_data = f.read()
+            
+        # Try to decrypt with provided key
+        # Handle key padding/hashing if necessary (similar to load_key logic)
+        key_bytes = key.encode('utf-8')
+        if len(key_bytes) != 16:
+             import hashlib
+             key_bytes = hashlib.sha256(key_bytes).digest()[:16]
+
+        decrypted_data = decrypt_image_data(encrypted_data, key_bytes)
+        
+        if decrypted_data:
+             from flask import send_file
+             import io
+             return send_file(
+                 io.BytesIO(decrypted_data),
+                 mimetype='image/jpeg',
+                 as_attachment=False,
+                 download_name=filename.replace('.bin', '.jpg')
+             )
+        else:
+             return "Decryption failed (Wrong Key)", 403
+             
+    except Exception as e:
+        print(f"[ERROR] View image error: {e}")
+        return "Internal server error", 500
+
 # Routes pour les pages web
 @app.route('/')
 def index():
@@ -191,6 +251,37 @@ def sensor_monitoring_page():
 @app.route('/door_history')
 def door_history_page():
     return render_template('door_history.html')
+
+@app.route('/settings', methods=['GET', 'POST'])
+def settings_page():
+    # Path to secret.key in the SecureAccess root (parent of parent of src)
+    key_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'secret.key')
+    
+    if request.method == 'POST':
+        new_key = request.form.get('encryption_key')
+        if new_key:
+            try:
+                # Save key to file
+                with open(key_path, 'wb') as f:
+                    f.write(new_key.encode('utf-8'))
+                
+                # Reload crypto_utils to pick up the new key
+                importlib.reload(crypto_utils)
+                
+                return render_template('settings.html', message="Clé mise à jour avec succès! N'oubliez pas de mettre à jour le Raspberry Pi.", current_key=new_key)
+            except Exception as e:
+                return render_template('settings.html', error=f"Erreur lors de la sauvegarde: {e}", current_key=new_key)
+    
+    # Read current key
+    current_key = "SecureAccessKey" # Default
+    if os.path.exists(key_path):
+        try:
+            with open(key_path, 'rb') as f:
+                current_key = f.read().decode('utf-8', errors='ignore')
+        except:
+            pass
+            
+    return render_template('settings.html', current_key=current_key)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
